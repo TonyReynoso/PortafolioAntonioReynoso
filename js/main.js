@@ -10,9 +10,6 @@ function DocumentReady(){
 
 DocumentReady();
 
-var x=12; var y=8; var res=eval("x+y"); 
-console.log(res);
-
 // Se crea el modal de bienvenida
 function CrearModal(){
     var dataModal = `
