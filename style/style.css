@@ -16,7 +16,8 @@ html{
 .hed {
     display: flex;
     position: relative;
-    background: #052d56;
+    /* background: #052d56; */
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
     /* height: 50vh; */
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
@@ -64,11 +65,11 @@ html{
     font-size: large;
 }
 
-@keyframes bg-animation {
+/* @keyframes bg-animation {
     0% { background-color: #0b1529; }
     50% { background-color: #47577a; }
     100% { background-color: #0b1529; }
-}
+} */
 
 .asideLeft{
     width: 15%;
@@ -76,8 +77,10 @@ html{
     position: relative;
     float: left;
     color: white;
-    border-radius: 10%;
-    animation: bg-animation 3s infinite;
+    border-radius: 0%;
+    border: outset 5px;
+    /* animation: bg-animation 3s infinite; */
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 
 .dataPage{
@@ -93,8 +96,9 @@ html{
     float: right;
     border: outset 5px;
     border-radius: 0%;
-    /* color: white; */
-    background: #eaeff4;
+    color: white;
+    /* background: #eaeff4; */
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 
 .imgMenu{
