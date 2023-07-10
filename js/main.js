@@ -43,3 +43,5 @@ function ImprimirModal(){
 }
 
 ImprimirModal();
+
+console.log("Prueba commit desde VSC");
