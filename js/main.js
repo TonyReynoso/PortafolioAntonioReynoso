@@ -1,3 +1,5 @@
+let num = 3;
+
 // Se muestran las secciones de la pagina, menu, aside izquierdo, aside derecho, data.
 function DocumentReady(){
     $(document).ready(function () {
@@ -9,6 +11,36 @@ function DocumentReady(){
 }
 
 DocumentReady();
+
+
+function loadDoc(num) {
+  const xhttp = new XMLHttpRequest();
+  let data = document.getElementById("loadData");
+  switch (num) {
+    case 1:
+        xhttp.onload = function() {
+            data.innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "data.html");
+        xhttp.send();
+        break;
+    case 2:
+        xhttp.onload = function() {
+            data.innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "noticias.html");
+        xhttp.send();
+        break;
+    case 3:
+        xhttp.onload = function() {
+            data.innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "contacto.html");
+        xhttp.send();
+        break;
+  }  
+}
+
 
 // Se crea el modal de bienvenida
 function CrearModal(){
@@ -22,7 +54,7 @@ function CrearModal(){
             </div>
             <div class="modal-body firstModal">
                 <h1>Welcome!</h1>
-                <p>View our page in facebook of create a videogames and other notices</p>
+                <p>Visit our page in facebook of create a videogames and other notices</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -43,5 +75,3 @@ function ImprimirModal(){
 }
 
 ImprimirModal();
-
-console.log("Prueba commit desde VSC");
