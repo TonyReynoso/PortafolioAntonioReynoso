@@ -57,7 +57,7 @@ function CrearModal(){
                 <p>Visit our page in facebook of create a videogames and other notices</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary btn-format" data-bs-dismiss="modal">Close</button>
             </div>
             </div>
         </div>
